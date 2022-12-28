@@ -1,13 +1,37 @@
-nav {
-    display: flex;
-    background-color: yellow;
-    overflow: auto;
+body {
+    background-color: rgb(251, 251, 251);
 }
-
-a {
+h1, p {
+    color: rgb(27, 27, 27);
+}
+.nav-bar {
+    /*background-color: yellow;*/
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    margin-left: auto
+}
+#logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu-item {
     display: inline-block;
     text-decoration: none;
     color: black;
-    float: right;
+    font-size: 15px;
     padding: 10px 10px;
+    /*background-color: brown;*/
+}
+img {
+    width: 3%;
+    padding: 3px 3px;
+}
+.social-links {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     /*background-color: yellow;*/
 }
