@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    background-color: yellow;
+    overflow: auto;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    float: right;
+    padding: 10px 10px;
+}
