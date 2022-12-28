@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(251, 251, 251);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nav-bar {
+    /*background-color: yellow;*/
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+.nav-links {
+    margin-left: auto
+}
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+.menu-item {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 10px 10px;
+    /*background-color: brown;*/
+}
+.social-links {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     /*background-color: yellow;*/
+}
+.social-img {
+    width: 20px;
+    padding: 3px 3px;
+}
+.program-img {
+    width: 50px;
+    padding: 3px 3px;
+}
+.content {
+    padding-left: 8px;
+    padding-top: 60px;
+    overflow: auto;
+    display: flex;
+}
+#text-section #desk-img {
+    display: inline-block;
+}
+#text-section {
+    width: 500px;
+}
+#desk-img {
+    padding-left: 300px;
+    width: 600px;
+}
+h1 {
+    font-size: 60px;
+    display: inline;
+}
+p {
+    font-size: 15px;
+    display: inline;
+}
+.social {
+    width: 60px;
+    padding-right: 15px;
+    transition: .5s;
+}
+.social:hover {
+    transform: translateY(-10px);
+}
