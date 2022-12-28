@@ -46,16 +46,21 @@ body {
     padding-left: 300px;
     width: 600px;
 }
-h1 {    
+h1 {
     font-size: 60px;
-    color: #26272A;
-    font-family: 'Archivo Black', sans-serif;
-    display: inline;
+}
+h2 {
+    font-size: 20px;
 }
 p {
     font-size: 16px;
-    color: #26272A;
     font-family: 'Quicksand', sans-serif;
+}
+h1, h2 {
+    font-family: 'Archivo Black', sans-serif;
+}
+h1, h2, p {        
+    color: #26272A;    
     display: inline;
 }
 .social {
@@ -65,4 +70,29 @@ p {
 }
 .social:hover {
     transform: translateY(-10px);
+}
+.program-img {
+    width: 100px;
+    justify-content: center;
+}
+.checked {
+    color: orange;
+}
+.program {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    width: 150px;    
+    /*box-shadow: 10px 10px 20px rgba(68, 68, 68, 0.115);
+    background-color: aqua;*/
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+.sec{
+    display: flex;
+    justify-content: space-around;
+    /*background-color: red;*/
 }
