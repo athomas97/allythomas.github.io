@@ -36,7 +36,10 @@ body {
     overflow: auto;
     display: flex;
 }
-#text-section #desk-img {
+.video-information {
+    padding-left: 40px;
+}
+#text-section #desk-img .video-information .left-section {
     display: inline-block;
 }
 #text-section {
