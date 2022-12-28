@@ -1,7 +1,7 @@
 body {
     background-color: rgb(251, 251, 251);
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 .nav-bar {
     /*background-color: yellow;*/
@@ -13,26 +13,18 @@ body {
     margin-left: auto
 }
 #logo {
+    color: #26272A;
     font-size: 30px;
     font-weight: bold;
 }
 .menu-item {
     display: inline-block;
     text-decoration: none;
-    color: black;
-    font-size: 15px;
+    color: #26272A;
+    font-size: 16px;
     padding: 10px 10px;
+    font-family: 'Quicksand', sans-serif;
     /*background-color: brown;*/
-}
-.social-links {
-     position: absolute;
-     bottom: 0;
-     right: 0;
-     /*background-color: yellow;*/
-}
-.social-img {
-    width: 20px;
-    padding: 3px 3px;
 }
 .program-img {
     width: 50px;
@@ -54,12 +46,16 @@ body {
     padding-left: 300px;
     width: 600px;
 }
-h1 {
+h1 {    
     font-size: 60px;
+    color: #26272A;
+    font-family: 'Archivo Black', sans-serif;
     display: inline;
 }
 p {
-    font-size: 15px;
+    font-size: 16px;
+    color: #26272A;
+    font-family: 'Quicksand', sans-serif;
     display: inline;
 }
 .social {
