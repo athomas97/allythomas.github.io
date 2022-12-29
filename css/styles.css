@@ -2,6 +2,7 @@ body {
     background-color: rgb(251, 251, 251);
     margin-left: 80px;
     margin-right: 80px;
+    overflow-y: scroll;
 }
 .nav-bar {
     /*background-color: yellow;*/
