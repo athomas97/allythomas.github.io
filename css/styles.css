@@ -34,7 +34,7 @@ body {
     color: #0087ca00;
     background-color: #c4c4c4;
 }
-iframe, .video-information {
+iframe, .video-information, .ux-image {
     position: relative;
     right: 40px;
 }
@@ -91,8 +91,8 @@ h1, h2, h3, p {
     display: inline;
 }
 .social {
-    width: 60px;
-    padding-right: 15px;
+    width: 50px;
+    padding-right: 10px;
     transition: .5s;
 }
 .social:hover {
