@@ -4,6 +4,9 @@ body {
     margin-right: 80px;
     overflow-y: scroll;
 }
+a {
+    text-decoration: none;
+}
 .nav-bar {
     /*background-color: yellow;*/
     overflow: auto;
@@ -25,7 +28,9 @@ body {
 .number {
     position: relative; 
     bottom: 55px;
-    z-index: 1;
+    right: 0;
+    z-index: 1;    
+    transition: 0.5s;
 }
 .number-shadow {
     right: 70px;
@@ -33,7 +38,8 @@ body {
     position: relative; 
     height: 60px;
     color: #0087ca00;
-    background-color: #c4c4c4;
+    background-color: #c4c4c4;    
+    transition: 0.5s;
 }
 iframe, .video-information, .ux-image {
     position: relative;
@@ -62,14 +68,18 @@ iframe, .video-information, .ux-image {
     background-color: white;
     border-radius: 25px;
     z-index: -2;
-    box-shadow: 20px 20px 10px rgba(52, 52, 52, 0.052);
+    box-shadow: 20px 20px 10px rgba(52, 52, 52, 0.040);
     padding-bottom: 50px;
     margin:50px 0;
     transition: 0.5s;
 }
 .ux-content:hover {
     transform: scale(1.02);
-    box-shadow: 35px 35px 10px rgba(52, 52, 52, 0.096);
+    box-shadow: 30px 30px 10px rgba(52, 52, 52, 0.060);
+}
+.ux-content:hover > .number-shadow {
+    right: 65px;
+    bottom: 25px;
 }
 .video-information {
     padding-left: 40px;
@@ -140,6 +150,15 @@ h1, h2, h3, p {
     display: flex;
     justify-content: space-around;
     /*background-color: red;*/
+}
+.title {
+    color: #26272A;
+    text-decoration: none;
+    transition: 0.06s;
+}
+.title:hover {
+    color: #0087ca;
+    text-decoration: underline;
 }
 ::-webkit-scrollbar {
     width: 10px;
