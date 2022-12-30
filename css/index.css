@@ -93,10 +93,14 @@ p, button {
     border-radius: 25px;
     z-index: -2;
     box-shadow: 20px 20px 10px rgba(52, 52, 52, 0.040);
-    padding: 4% 4%;
+    padding: 4% 2% 4% 2%;    
     margin: 3% 0;
-    transition: 0.5s;
-    overflow-wrap: break-word;
+    width: fit-content;
+    transition: 0.5s;    
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 30px 30px 10px rgba(52, 52, 52, 0.060);
 }
 .video-information {
     display: flex;
@@ -112,11 +116,29 @@ p, button {
     width: 400px;
     height: 300px;
 }
+.option {
+    margin-right: 3%;
+}
 .number {
     position: relative; 
-    bottom: 55px;
-    margin-right: 3%;
-    z-index: 1;    
+    bottom: 75px;    
+}
+.shadow {
+    height: 60px;
+    width: 80px;
+    background-color: #c4c4c4;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    z-index: 0;
+    transition: 0.5s;
+}
+.title {
+    transition: 0.06s;
+}
+.title:hover {
+    color: #0087ca;
+    text-decoration: underline;
 }
 button {
     text-decoration: none;
@@ -133,24 +155,40 @@ button {
     opacity: 1;
     transition: 0.1s;
 }
+.primary-button:hover {
+    opacity: 0.8;
+}
+.primary-button:active {
+    opacity: 1;
+    background-color: #0070a7;
+    border: 2px solid #0070a7;
+}
 .secondary-button {
     background-color: white;
     color: #0087ca;
     border: 2px solid #0087ca;
     transition: 0.1s;
 }
-@media (max-width: 1100px) {
-    .number {
-        bottom: 30px;
+.secondary-button:hover {
+    opacity: 0.8;
+}
+.secondary-button:active {
+    opacity: 1;
+    background-color: #0087ca;
+    color: white;
+    border: 2px solid #0087ca;
+}
+@media (max-width: 1020px) {
+    .option  {
         display: none;
     }
-    .card {        
+    .card {             
+        padding: 4% 4% 4% 4%;       
         flex-wrap: wrap;
     }
     .ux-image {
         width: auto;
     }
-
     .video-information {
         margin-left: 0px;
     }
