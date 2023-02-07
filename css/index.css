@@ -260,6 +260,9 @@ button {
 .buttons_section {
     flex-shrink: 1;
 }
+.light_line {
+    border-top: 1px solid rgb(236, 235, 235);
+}
 @media (max-width: 1130px) {
     .flexbox-container {
         padding: 4% 4%;
