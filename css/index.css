@@ -207,6 +207,14 @@ button {
     }
 }
 */
+.container {
+    padding: 2% 5%;    
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 20px 20px 10px rgba(52, 52, 52, 0.040);    
+    height: auto;
+    margin-bottom: 4%; 
+}
 .flexbox-container {
     padding: 2% 2%;    
     display: flex;
