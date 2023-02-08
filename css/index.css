@@ -64,8 +64,8 @@ p, button {
 }
 .program {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     padding: 10px 10px;
     width: 150px;    
 }
