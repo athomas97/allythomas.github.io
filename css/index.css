@@ -73,7 +73,8 @@ p, button {
     color: orange;
 }
 .program-img {
-    width: 100px;
+    width: 80%;
+    height: auto;
     transition: 0.5s;
 }
 .program-img:hover {
