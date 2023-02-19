@@ -146,7 +146,7 @@ p, button {
     text-decoration: underline;
 }
 button {
-    text-decoration: none;
+    text-decoration: none;    
     width: 250px;
     height: 50px;
     border-radius: 20px;
@@ -183,31 +183,7 @@ button {
     color: white;
     border: 2px solid #0087ca;
 }
-/*
-@media (max-width: 1020px) {
-    .option  {
-        display: none;
-    }
-    .card {             
-        padding: 4% 4% 4% 4%;       
-        flex-wrap: wrap;
-    }
-    .ux-image {
-        width: auto;
-    }
-    .video-information {
-        margin-left: 0px;
-    }
-    .button-section {
-        display: flex;
-        gap: 10px
-    }
-    iframe {
-        width: 768px;
-        height: 432px;
-    }
-}
-*/
+
 .container {
     padding: 2% 5%;    
     background-color: white;
@@ -260,6 +236,7 @@ button {
 }
 .buttons_section {
     flex-shrink: 1;
+    margin-bottom: 5%;    
 }
 .ux_case_study_section {
     margin-right: auto;
@@ -298,8 +275,7 @@ button {
         width: 100%;
     }
     .buttons_section {
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-evenly;
+        margin-top: 5%;     
+        justify-content: space-evenly;   
     }
 }
