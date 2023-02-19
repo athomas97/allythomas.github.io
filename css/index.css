@@ -280,12 +280,14 @@ button {
         display: none;
     }
     .flexbox-item-2 {
-        flex-direction: column;
+        flex-direction: column;        
     }
     .flexbox-item-3 {
         flex-grow: 1;
         width:auto;
         height: auto;
+        display: flex;
+        justify-content: center;
     }
     .flexbox-item-4 {
         flex-grow: 1;
@@ -294,5 +296,10 @@ button {
     }
     iframe {
         width: 100%;
+    }
+    .buttons_section {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
