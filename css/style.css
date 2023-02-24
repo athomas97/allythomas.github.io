@@ -50,7 +50,7 @@ h1, h2, .roles, #title, .program-card {
     text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.05);
 }
 
-#ally-text, p, .menu-item, h2, h3 {
+#ally-text, p, .menu-item, h1, h2, h3 {
     color: white;
 }
 
@@ -82,6 +82,36 @@ p, .nav-links, button {
 }
 
 #hi-im-text {
+    color: rgb(0, 0, 0, 0.2);
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    text-stroke: 2px rgb(255, 255, 255);
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 1%;
+
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 82px;  
+
+    color: white;
+    text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.15);
+}
+
+.sub-title-outline {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 82px;  
+
     color: rgb(0, 0, 0, 0.2);
     -webkit-text-stroke: 2px rgb(255, 255, 255);
     text-stroke: 2px rgb(255, 255, 255);
@@ -127,6 +157,27 @@ p, .nav-links, button {
 .hover-underline-animation-bluegreen, .hover-underline-animation-yellowpink, .hover-underline-animation-bluecyan {
     display: inline-block;
     position: relative;
+}
+
+#ux-menu-item, #video-editing-menu-item {
+    position: relative;
+}
+.selected-underline-bluegreen {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, #10E4F1 0%, #A9F110 100%, #10F14F 100%);
+}
+
+.selected-underline-yellowpink {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, #D8AF45 0%, #BC1CCC 100%);
 }
   
 .hover-underline-animation-bluegreen::after {
@@ -310,7 +361,7 @@ p, .nav-links, button {
 
 .program-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.15);
 }
 
 .program-img {
@@ -323,10 +374,8 @@ p, .nav-links, button {
     height: 600px;
     width: 600px;
     background-color: #bbb;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 }
-
 .circle-blur {
     animation-name: circle-anim;
     animation-duration: 10s;
@@ -337,6 +386,11 @@ p, .nav-links, button {
 }
 
 /* Scroll Button */
+.scroll-up {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
 .scroll-button {
     z-index: 1; 
     position: fixed; 
@@ -344,14 +398,12 @@ p, .nav-links, button {
     height: 80px; 
     right: 20px; 
     bottom: 20px;
-    background-color: #bbb;
-    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.15);
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.1));
     transition: .5s;
 }
 
 .scroll-button:hover {
-    background-color: #dadada;
-    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+    filter: drop-shadow(0px 0px 25px rgba(255, 255, 255, 0.2));
     transform: translateY(-10px);
 }
 
@@ -504,6 +556,11 @@ iframe {
     flex-grow: 1;
 }
 
+.ux-img {
+    width: 400px; 
+    height: 320px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.1));
+}
 
 /* BUTTONS */
 button {
@@ -514,6 +571,7 @@ button {
     cursor:pointer;
     width: 90%; 
     margin-left: 5%;
+    border: 0;
 }
 .primary-button  {
     background: linear-gradient(90deg, #10E4F1 0%, #A9F110 100%, #10F14F 100%);
