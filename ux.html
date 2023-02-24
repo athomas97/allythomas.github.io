@@ -6,93 +6,106 @@
         <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
         <meta http-equiv=“X-UA-Compatible” content=“ie=edge”>
         <title>Ally Thomas | UX</title>
-        <link rel="icon" href="images/icons/ally.png">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" href="images/ally.png">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Quicksand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
     </head>
-    
     <body>
-        <div class="nav-bar">
-            <a href="index.html"><img src="images/icons/ally.png" style="width: 70px; filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.6));"></a>
-            <a id="logo" class="menu-item" href="index.html">Ally Thomas</a>
+        <a href="#nav"><span class="circle scroll-button"></span></a>
+        <span class="circle circle-blur" style="position: absolute; left: -2%; top: -20%; z-index: -1;"></span>
+        <nav class="nav-bar" id="nav">
+            <a id="title" class="menu-item" href="index.html">ALLY THOMAS</a>
             <div class="nav-links">
-                <a class="menu-item" href="ux.html">UX</a>
-                <a class="menu-item" href="video-editing.html">Video Editing</a>   
-                <a class="menu-item" target="_blank" href="https://github.com/athomas97">Github</a>  
+                <a class="menu-item hover-underline-animation-bluegreen" href="ux.html">UX</a>
+                <a class="menu-item hover-underline-animation-yellowpink" href="video-editing.html">Video Editing</a>   
+                <a class="menu-item hover-underline-animation-bluecyan" target="_blank" href="https://github.com/athomas97">Github</a>  
+                <a class="menu-button" href="#contact">CONTACT</a>
+            </div>
+        </nav>
+        <main>  
+            <div class="ux-flexbox-container" id="manga_collection_tracker" style="margin: auto;">
+                <div class="ux-flexbox-item ux-flexbox-item-2">
+                    <div class="ux-flexbox-sub-item ux-flexbox-item-3">
+                        <a href="#"><img src="images/Manga-Collection.jpg" style="width: 400px; height: 320px;"></a>
+                    </div>
+                    <div class="ux-flexbox-sub-item ux-flexbox-item-4">
+                        <div class="ux_details">
+                            <a href="#"><h2 class="title">MANGA COLLECTION TRACKER</h2></a> <br>
+                            <h3>Jan 2023 - Feb 2023</h3> <br>
+                            <hr class="light_line">
+                            <p>A mobile app for people who collect physical manga volumes to keep track of their collection</p>
+                        </div>
+                        <div class="buttons_section">
+                            <div style="flex-grow: 1;">
+                                <a href="#"><button type="button" class="primary-button">Read Case Study</button></a>
+                            </div>
+                            <div style="flex-grow: 1;">
+                                <a href="#"><button type="button" class="secondary-button">View Prototype</button></a>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div> 
+            <br><br><br>
+            <div class="ux-flexbox-container" id="FWLT" style="margin: auto;">
+                <div class="ux-flexbox-item ux-flexbox-item-2">
+                    <div class="ux-flexbox-sub-item ux-flexbox-item-3">
+                        <a href="#"><img src="images/FWLT.png"  style="width: 400px; height: 300px;"></a>
+                    </div>
+                    <div class="ux-flexbox-sub-item ux-flexbox-item-4">
+                        <div class="ux_details">
+                            <a href="#"><h2 class="title">FLEXIBLE WORK LOCATION TOOL</h2></a> <br>
+                            <h3>Sept 2022 - Feb 2023</h3> <br>
+                            <hr class="light_line">
+                            <p>A mobile app for people who collect physical manga volumes to keep track of their collection</p>
+                        </div>
+                        <div class="buttons_section">
+                            <div style="flex-grow: 1;">
+                                <a href="#"><button type="button" class="primary-button">Read Case Study</button></a>
+                            </div>
+                            <div style="flex-grow: 1;">
+                                <a href="#"><button type="button" class="secondary-button">View Prototype</button></a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div> 
+            <br><br><br>
+            <div class="ux-flexbox-container" id="student_tracker" style="margin: auto;">
+                <div class="ux-flexbox-item ux-flexbox-item-2">
+                    <div class="ux-flexbox-sub-item ux-flexbox-item-3">
+                        <a href="student-tracker.html"><img src="images/Student-Tracker.jpg" style="width: 400px; height: 320px;"></a>
+                    </div>
+                    <div class="ux-flexbox-sub-item ux-flexbox-item-4">
+                        <div class="ux_details">
+                            <a href="student-tracker.html"><h2 class="title">STUDENT SCHEDULER</h2></a> <br>
+                            <h3>Sept 2022 - Dec 2022</h3> <br>
+                            <hr class="light_line">
+                            <p>A mobile app for people who collect physical manga volumes to keep track of their collection</p>
+                        </div>
+                        <div class="buttons_section">
+                            <div style="flex-grow: 1;">
+                                <a href="student-tracker.html"><button type="button" class="primary-button" style="margin-right: 2%;">Read Case Study</button></a>
+                            </div>
+                            <div style="flex-grow: 1;">
+                                <a target="_blank" href="https://www.figma.com/proto/H6BmdEEYUBNFzCXcVvk35H/Student-App-Prototype-(Copy)?node-id=4%3A12&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A12&show-proto-sidebar=1"><button type="button" class="secondary-button">View Prototype</button></a>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>  
+            <br><br><br><br>
+        </main>
+        <div class="contact-container" id="contact">
+            <h1 class="gradient-text">CONTACT</h1>
+            <div class="social-links-container">
+                <a target="_blank" href="https://www.linkedin.com/in/ally-kyle-thomas/" style="display: contents;"><img src="images/linkedin.png" class="social-img"></a>
+                <a target="_blank" href="#" style="display: contents;"><img src="images/email.png" class="social-img"></a>
             </div>
         </div>
-        <br>
-        <div class="flexbox-container" id="manga_collection_tracker" style="margin: auto;">
-            <div class="flexbox-item flexbox-item-2">
-                <div class="flexbox-sub-item flexbox-item-3">
-                    <a href="#"><img src="images/Graphics/Manga-Collection.jpg" style="width: 400px; height: 320px;"></a>
-                </div>
-                <div class="flexbox-sub-item flexbox-item-4">
-                    <div class="ux_details">
-                        <a href="#"><h2 class="title">Manga Collection Tracker</h2></a> <br>
-                        <h3>Jan 2023 - Feb 2023</h3> <br>
-                        <hr class="light_line">
-                        <p>A mobile app for people who collect physical manga volumes to keep track of their collection</p>
-                    </div>
-                    <div class="buttons_section">
-                        <a href="#"><button type="button" class="primary-button" style="margin-right: 2%;">Read Case Study</button></a>
-                        <a href="#"><button type="button" class="secondary-button">View Prototype</button></a>
-                    </div>                        
-                </div>
-            </div>
-        </div> 
-        <br>
-        <div class="flexbox-container" id="FWLT" style="margin: auto;">
-            <div class="flexbox-item flexbox-item-2">
-                <div class="flexbox-sub-item flexbox-item-3">
-                    <a href="#"><img src="images/Graphics/FWLT.png"  style="width: 400px; height: 300px;"></a>
-                </div>
-                <div class="flexbox-sub-item flexbox-item-4">
-                    <div class="ux_details">
-                        <a href="#"><h2 class="title">Flexible Work Location Tool</h2></a> <br>
-                        <h3>Sept 2022 - Feb 2023</h3> <br>
-                        <hr class="light_line">
-                        <p>A mobile app for people who collect physical manga volumes to keep track of their collection</p>
-                    </div>
-                    <div class="buttons_section">
-                        <a href="#"><button type="button" class="primary-button" style="margin-right: 2%;">Read Case Study</button></a>
-                        <a href="#"><button type="button" class="secondary-button">View Prototype</button></a>
-                    </div>                        
-                </div>
-            </div>
-        </div> 
-        <br>
-        <div class="flexbox-container" id="student_tracker" style="margin: auto;">
-            <div class="flexbox-item flexbox-item-2">
-                <div class="flexbox-sub-item flexbox-item-3">
-                    <a href="student-tracker.html"><img src="images/Graphics/Student-Tracker.jpg" style="width: 400px; height: 320px;"></a>
-                </div>
-                <div class="flexbox-sub-item flexbox-item-4">
-                    <div class="ux_details">
-                        <a href="student-tracker.html"><h2 class="title">Student Scheduler</h2></a> <br>
-                        <h3>Sept 2022 - Dec 2022</h3> <br>
-                        <hr class="light_line">
-                        <p>A mobile app for people who collect physical manga volumes to keep track of their collection</p>
-                    </div>
-                    <div class="buttons_section">
-                        <a href="student-tracker.html"><button type="button" class="primary-button" style="margin-right: 2%;">Read Case Study</button></a>
-                        <a target="_blank" href="https://www.figma.com/proto/H6BmdEEYUBNFzCXcVvk35H/Student-App-Prototype-(Copy)?node-id=4%3A12&scaling=scale-down&page-id=0%3A1&starting-point-node-id=4%3A12&show-proto-sidebar=1"><button type="button" class="secondary-button">View Prototype</button></a>
-                    </div>                        
-                </div>
-            </div>
-        </div>    
-        <br>
-        <div class="center"><h3>Lets Connect</h3></div>
-        <div class="center">
-            <a href="#" target="_blank"><img class="social" src="images/icons/twitter-circle.png"></a>
-            <a href="#" target="_blank"><img class="social" src="images/icons/youtube-circle.png"></a>
-            <a href="#" target="_blank"><img class="social" src="images/icons/instagram-circle.png"></a>
-            <a href="#" target="_blank"><img class="social" src="images/icons/linkedin-circle.png"></a>
-            <a href="#" target="_blank"><img class="social" src="images/icons/gmail-circle.png"></a>
-        </div>
-        <br> <br> <br> 
+        <br><br><br>
     </body>
 </html>
