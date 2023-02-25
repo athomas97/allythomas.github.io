@@ -246,7 +246,15 @@ p, .nav-links, button {
     flex-grow: 1; 
 }
 .nav-links {
+    flex-shrink: 1;
+    justify-content: end;
+    align-items: end;
+    align-self: flex-end;
+    align-content: flex-end;
     margin-left: auto;
+}
+.nav-title {
+    flex-grow: 1;
 }
 .menu-item {    
     display: inline-block;
@@ -256,11 +264,13 @@ p, .nav-links, button {
 }
 .menu-button{
     color: black;
-    background: linear-gradient(90deg, #D8AF45 0%, #BC1CCC 100%);
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
 }
 .menu-button:hover{
-    color: rgb(24, 24, 24);
-    background: linear-gradient(90deg, #f7c955 0%, #e32df3 100%);
+    opacity: 0.8;
+}
+.menu-button:active{
+    opacity: 1;
 }
 
 /* ROLES */
