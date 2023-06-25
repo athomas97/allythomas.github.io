@@ -46,8 +46,11 @@ h1, h2, h4, .roles, #title, .program-card {
 #hi-im-text, #ally-text, p {
     font-weight: 400;
     font-size: 96px;
-    line-height: 141px;
     text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.05);
+}
+
+#hi-im-text, #ally-text {
+    line-height: 141px;
 }
 
 #ally-text, p, .menu-item, h1, h2, h3, h4, figcaption, ul {
@@ -262,12 +265,12 @@ p, .nav-links, button, th, td, ul {
 
 .title {
     transition: 0.06s;
-}
+}/*
 .title:hover {
     color: #0087ca;
     text-decoration: underline;
 }
-
+*/
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
@@ -293,9 +296,8 @@ p, .nav-links, button, th, td, ul {
 .nav-title {
     flex-grow: 1;
 }
-.menu-item {    
+.menu-item {        
     display: inline-block;
-    text-decoration: none;
     padding: 10px 10px;
     opacity: .9; 
 }
@@ -371,15 +373,43 @@ p, .nav-links, button, th, td, ul {
     margin-bottom: 5em;
 }
 
+.section-break {
+    margin-bottom: 5%;
+}
+
+.hover-text-bluecyan:hover {
+    color: #1CCCC1;
+    text-decoration: underline;
+}
+
+.hover-text-yellowpink:hover {
+    color: #D8AF45;
+    text-decoration: underline;
+}
+
+.case-study-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0em;    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5% 5%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    backdrop-filter: blur( 2px );
+    border-radius: 49px;
+}
+
 .program-container {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 0em;    
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 2% 2%;
-
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.02);
     border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -637,7 +667,6 @@ button {
 #case-study-summary {
     display: flex; 
     flex-direction: row; 
-    margin-bottom: 5%;
 }
 
 .case-study-nav {
@@ -690,6 +719,10 @@ table {
     #profileimg {
         display: none;
     }
+
+    #case-study-nav-container {
+        display: none;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -713,8 +746,7 @@ table {
 }
 
 @media (max-width: 800px) {
-    .scroll-button, #case-study-nav-container, #case-study-invisible-nav {
+    .scroll-button {
         display: none;
-        width: 0px;
     }
 }
