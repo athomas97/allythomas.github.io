@@ -357,15 +357,13 @@ p, .nav-links, button, th, td, ul {
 .home-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 /* ABOUT */
 #about-container {
-    flex-grow: 2;
-    max-width: 600px;
+    flex-grow: 1;
 }
 
 /* PROGRAM AND LANGUAGES CARDS */
@@ -711,14 +709,18 @@ table {
     #languages {
         margin-top: 10%;
     }
+
+    .home-container {
+        flex-direction: column-reverse;
+    }
+
+    #profileimg-container {
+        margin: auto;
+    }
     
     .flexbox-container {
         padding: 4% 4%;
     }   
-
-    #profileimg {
-        display: none;
-    }
 
     #case-study-nav-container {
         display: none;
